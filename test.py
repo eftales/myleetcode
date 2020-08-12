@@ -23,3 +23,31 @@ b.add(2)
 c = set.union(a,b)
 print(a.union(b))
 print(a)
+
+
+class Node:
+    def __init__(self, val = 0, neighbors = []):
+        self.val = val
+        self.neighbors = neighbors
+
+l = [1,2,3,4]
+n1 = Node(1,l)
+n2 = Node(2,l)
+nl = (n1,n2)
+print(nl[0].neighbors,nl[1].neighbors,l)
+def t22(nodeList):
+    nodeList[0].neighbors.pop()
+t22(nl)
+print(nl[0].neighbors,nl[1].neighbors,l)
+print(l)
+
+print("---------")
+n1 = Node(1,l.copy())
+n2 = Node(2,l.copy())
+nl = (n1,n2)
+print(nl[0].neighbors,nl[1].neighbors,l)
+def t22(nodeList):
+    nodeList[0].neighbors.pop()
+t22(nl)
+print(nl[0].neighbors,nl[1].neighbors,l)
+print(l)
