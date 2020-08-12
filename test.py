@@ -24,30 +24,19 @@ c = set.union(a,b)
 print(a.union(b))
 print(a)
 
-
 class Node:
     def __init__(self, val = 0, neighbors = []):
         self.val = val
         self.neighbors = neighbors
 
-l = [1,2,3,4]
-n1 = Node(1,l)
-n2 = Node(2,l)
-nl = (n1,n2)
-print(nl[0].neighbors,nl[1].neighbors,l)
-def t22(nodeList):
-    nodeList[0].neighbors.pop()
-t22(nl)
-print(nl[0].neighbors,nl[1].neighbors,l)
-print(l)
+def cloneNode(node):
+    newNode = Node(node.val)
+    return newNode
 
-print("---------")
-n1 = Node(1,l.copy())
-n2 = Node(2,l.copy())
-nl = (n1,n2)
-print(nl[0].neighbors,nl[1].neighbors,l)
-def t22(nodeList):
-    nodeList[0].neighbors.pop()
-t22(nl)
-print(nl[0].neighbors,nl[1].neighbors,l)
-print(l)
+n1 = Node(1,[])
+n2 = Node(2,[])
+
+n1.neighbors.append(22)
+
+print(n1.neighbors,n2.neighbors)
+
