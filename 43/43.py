@@ -10,11 +10,11 @@ class Solution:
 
         res = [0 for i in range(0,m+n)] 
 
-        for i in range(0,m):
-            for j in range(0,n):
-                mul = int(num1[m-i-1]) * int(num2[n-j-1]) + res[m+n-1-i-j] # 注意！！ 防止 res 中的元素可能大于 10
-                res[m+n-1-i-j] = mul % 10 # 注意！！ 防止 res 中的元素可能大于 10
-                res[m+n-2-i-j] += mul // 10
+        for i in range(m-1,-1,-1):
+            for j in range(n-1,-1,-1):
+                mul = int(num1[i]) * int(num2[j]) + res[i+j+1] # 注意！！ 防止 res 中的元素可能大于 10
+                res[i+j+1] = mul % 10 # 注意！！ 防止 res 中的元素可能大于 10
+                res[i+j] += mul // 10
 
         if res[0] == 0:
             res.pop(0)
