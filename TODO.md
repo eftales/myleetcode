@@ -3,3 +3,5 @@
 2. [546. 移除盒子](https://leetcode-cn.com/problems/remove-boxes/) 这是个三维动态规划。。。
 
 3. collections Python 工具库 https://zhuanlan.zhihu.com/p/110476502
+
+4. Manacher 算法 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
