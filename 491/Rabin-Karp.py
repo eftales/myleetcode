@@ -16,9 +16,3 @@ def encrypt(s): # s 需要是一个 list，每一个元素都是字符
 encrypt(['a','b','c','a'])
 
 # 这个只是最简单的情况，复杂情况还需考虑取模
-
-for each in [1,2,3]:
-    if each == 4:
-        break
-else:
-    print("22")
