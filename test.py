@@ -1,42 +1,33 @@
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from functools import reduce 
+tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
 
-t1 = TreeNode(1)
-t2 = TreeNode(2)
-t3 = TreeNode(3)
+def myHash(s):
+    base = 31
+    slist = list(s)
+    sintList = list(map(lambda x:ord(x)-ord('A'),slist))
+    hashcode = reduce(lambda x,y:x*base+y,sintList)
+    return hashcode
+hashDict = dict()
+fromtoDict = dict()
 
-t1.left = t3
-t3.right = t2
+for ticket in tickets:
+    fromLoc = ticket[0]
+    toLoc = ticket[1]
 
-aa = [(1,1),(2,2)]
-for x,y in aa:
-    print(x,y)
+    if fromLoc not in hashDict:
+        hashDict[fromLoc] = myHash(fromLoc)
+    if toLoc not in hashDict:
+        hashDict[toLoc] = myHash(toLoc)
 
+    if fromLoc not in fromtoDict:
+        fromtoDict[fromLoc] = [toLoc]
+    else:
+        for i in range(0,len(fromtoDict[fromLoc])):
 
-a = set()
-a.add(1)
-b = set()
-b.add(2)
-c = set.union(a,b)
-print(a.union(b))
-print(a)
+            if hashDict[fromtoDict[fromLoc][i]] > hashDict[toLoc] :
+                fromtoDict[fromLoc].insert(i,toLoc)
+                break
+        else:
+            fromtoDict[fromLoc].append(toLoc)
 
-class Node:
-    def __init__(self, val = 0, neighbors = []):
-        self.val = val
-        self.neighbors = neighbors
-
-def cloneNode(node):
-    newNode = Node(node.val)
-    return newNode
-
-n1 = Node(1,[])
-n2 = Node(2,[])
-
-n1.neighbors.append(22)
-
-print(n1.neighbors,n2.neighbors)
-
+print(fromtoDict)
