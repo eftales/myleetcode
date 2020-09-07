@@ -5,3 +5,6 @@
 3. collections Python 工具库 https://zhuanlan.zhihu.com/p/110476502
 
 4. Manacher 算法 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
+
+5. 快排解决 TOP-K 问题 https://leetcode-cn.com/problems/top-k-frequent-elements/solution/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
+
