@@ -7,5 +7,3 @@
 4. Manacher 算法 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
 
 5. 快排解决 TOP-K 问题 https://leetcode-cn.com/problems/top-k-frequent-elements/solution/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
-
-6. 自己动手实现一个 heap
