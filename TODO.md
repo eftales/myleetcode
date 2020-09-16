@@ -7,3 +7,5 @@
 4. Manacher 算法 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
 
 5. 快排解决 TOP-K 问题 https://leetcode-cn.com/problems/top-k-frequent-elements/solution/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
+
+6. N 皇后问题，非周末就不做困难提了嗷，周末康一下 https://leetcode-cn.com/problems/n-queens/
