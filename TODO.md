@@ -9,3 +9,5 @@
 5. 快排解决 TOP-K 问题 https://leetcode-cn.com/problems/top-k-frequent-elements/solution/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
 
 6. N 皇后问题，非周末就不做困难提了嗷，周末康一下 https://leetcode-cn.com/problems/n-queens/
+
+7. 题目 235 https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-26/ 一次遍历求解
