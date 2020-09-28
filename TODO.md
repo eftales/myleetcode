@@ -11,3 +11,7 @@
 6. N 皇后问题，非周末就不做困难提了嗷，周末康一下 https://leetcode-cn.com/problems/n-queens/
 
 7. Morris 中序遍历，亲自实现一下吧
+
+8. 题目 235 https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-26/ 一次遍历求解
+
+9. 501 优化
