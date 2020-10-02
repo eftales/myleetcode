@@ -15,5 +15,3 @@
 8. 题目 235 https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-26/ 一次遍历求解
 
 9. 501 优化
-
-10. 145 迭代
