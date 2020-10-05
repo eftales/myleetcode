@@ -6,10 +6,8 @@
 
 4. Manacher 算法 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
 
-5. 快排解决 TOP-K 问题 https://leetcode-cn.com/problems/top-k-frequent-elements/solution/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
+5. N 皇后问题，非周末就不做困难提了嗷，周末康一下 https://leetcode-cn.com/problems/n-queens/
 
-6. N 皇后问题，非周末就不做困难提了嗷，周末康一下 https://leetcode-cn.com/problems/n-queens/
+6. Morris 中序遍历，亲自实现一下吧
 
-7. Morris 中序遍历，亲自实现一下吧
-
-8. kmp 字符串匹配算法 http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
+7. kmp 字符串匹配算法 http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
