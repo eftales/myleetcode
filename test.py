@@ -1,15 +1,16 @@
 def qs(nums,begin,end):
     if begin >= end:
         return None
-    mid = nums[begin]
-    left = begin
+    left = begin 
     right = end
+    mid = nums[left]
     while left != right:
         while left != right:
             if nums[right] < mid:
                 nums[left] = nums[right]
                 break
             right -= 1
+        
         while left != right:
             if nums[left] > mid:
                 nums[right] = nums[left]
@@ -17,7 +18,7 @@ def qs(nums,begin,end):
             left += 1
     nums[left] = mid
     qs(nums,begin,left-1)
-    qs(nums,left+1,end)
+    qs(nums,right+1,end)
 
 l = []
 import random
