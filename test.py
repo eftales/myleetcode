@@ -1,29 +1,33 @@
-def qs(nums,begin,end):
-    if begin >= end:
-        return None
-    left = begin 
-    right = end
-    mid = nums[left]
-    while left != right:
-        while left != right:
-            if nums[right] < mid:
-                nums[left] = nums[right]
+def findBound(A):
+    left = 0
+    righ = len(A) - 1
+    boundary = righ//2 # A[boundary]*A[boundary+1] < 0 or A[boundary] == 0
+    while True:
+        if not left<=righ:
+            boundary = None
+            break
+        elif A[boundary] == 0:
+            break
+        elif A[boundary] > 0:
+            if boundary == 0:
+                boundary = None
                 break
-            right -= 1
+            righ = boundary-1
+            
+        elif A[boundary] < 0:
+            if boundary == len(A)-1:
+                boundary = None
+                break
+            if A[boundary+1] > 0:
+                break
+            else:
+                left = boundary + 1
         
-        while left != right:
-            if nums[left] > mid:
-                nums[right] = nums[left]
-                break
-            left += 1
-    nums[left] = mid
-    qs(nums,begin,left-1)
-    qs(nums,right+1,end)
+        boundary = (left+righ) // 2
+    return boundary
 
-l = []
-import random
-for i in range(0,100):
-    l.append(random.randint(1,9999))
-print(l)
-qs(l,0,len(l)-1)
-print(l)
+findBound([-1,0,3,10])
+findBound([3])
+findBound([-1,-1,-1,-1])
+
+p  = 1
