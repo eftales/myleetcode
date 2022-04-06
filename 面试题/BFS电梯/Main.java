@@ -8,7 +8,7 @@ import java.util.*;
 
 public class Main {
 
-    public static boolean bfs(int curr,int[] cnt, int[] K, int N, int B){
+    public static boolean dfs(int curr,int[] cnt, int[] K, int N, int B){
         int indR = curr+K[curr];
         int indL = curr-K[curr];
 
