@@ -1,5 +1,5 @@
 import java.util.*;
-
+// 网易2021校招笔试-Java开发工程师（正式第二批）
 /** 动态规划，从后向前进行计算
     如果 nums[i] 是 0，dp[i] = dp[i+1]
     如果 nums[i] 是 1，dp[i] = dp[i+1] + dp[i+2] +dp[i+3]
